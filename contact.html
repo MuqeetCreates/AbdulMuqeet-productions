@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+      
+       text-align: center;
+       background-color:black;
+    }
+    #skill{
+    font-size:45px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:blue;
+    display:flex;
+    justify-self: center;    
+}
+#skill {
+    font-family: monospace; /* Monospace font for typewriter effect */
+    overflow: hidden; /* Ensures text is hidden until revealed */
+    border-right: 3px solid; /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 4s steps(80, end), blink-caret 1s step-end infinite;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* End with full width */
+    }
+}
+
+/* Keyframes for blinking cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Cursor is invisible */
+    }
+    50% {
+        border-color: black; /* Cursor is visible */
+    }
+}
+
+    #logo {
+            display: flex;
+            gap: 15px; /* Space between links */
+            
+        }
+
+        #logo  {
+            color: black; /* Initial color */
+            text-decoration: none; /* Remove underline */
+            transition: color 1.5s ease; /* Smooth transition for color change */
+        }
+
+        #logo :hover {
+            color: rgb(12, 12, 12); /* Color on hover */
+        }
+#logo{
+    font-size:30px;
+    color:rgb(211, 216, 214);
+    position:absolute;
+    top:20px;
+    margin-right:200px;
+    
+}
+#logo:hover{
+    border-radius:10%;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    
+}
+
+    #main{
+    position:absolute;
+    right:0px;
+    top:25px;
+    font-size:20px;
+    
+}
+#home{
+    margin-right:50px;
+    color:whitesmoke;
+    text-decoration:none;
+    transition: color 1.5s ease;
+}
+#home:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+
+}
+#projects{
+    margin-right:50px;
+    transition: color 1.5s ease;
+    color:whitesmoke;
+    text-decoration:none;
+}
+#projects:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+}
+#aboutme{
+    margin-right:50px;
+    color:whitesmoke;
+    text-decoration:none;
+    transition: color 1.5s ease-out;
+}
+#aboutme:hover{
+    
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    text-decoration:none;
+}
+#contact{
+    margin-right:100px;
+    color:whitesmoke;
+    text-decoration:none;
+    transition: color 1.5s ease;
+}
+#contact:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+    
+}
+#welcome{
+    font-size:43px;
+    margin-top:265px;
+    margin-left:20px;
+}
+    
+        
+        
+    
+    #box1{
+        height:500px;
+        width:800px;
+        background-color:black;
+        display:flex;
+        margin-left:100px;
+        border-radius:5%;
+        border-top:5px solid blue;
+        border-bottom:5px solid blue;
+        animation:border 3s linear infinite;
+        margin-top:75Px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;;
+        
+
+    }
+    
+    #me{
+        width:500PX;
+        
+        height:50px;
+        font-size:40px;
+        color:whitesmoke;
+        stroke-width:5px;
+        
+        font-family:monospace;
+        margin-left:200px;
+        margin-top:10px;
+        
+
+        
+    }
+    #name{
+        margin-top:95px;
+        position:absolute;
+        left:150px;
+        height:30px;
+        width:240px;
+        border:none;
+        border-radius:30px;
+        
+        
+    }
+    #name2{
+        margin-top:75px;
+        position:absolute;
+        left:350px;
+        color:blue;
+        left:150px;
+        border:none;
+    }
+    #gmail{
+        margin-top:57px;
+        position:absolute;
+        left:500px;
+        left:615px;
+        height:30px;
+        width:240px;
+        border:none;
+        border-radius:30px;
+    }
+    #email2{
+        margin-top:37px;
+        position:absolute;
+        left:615px;
+        color:blue;
+        
+    }
+    #phone{
+        margin-top:110px;
+        position:absolute;
+        left:150px;
+        height:30px;
+        width:240px;
+        border:none;
+        border-radius:30px;
+        
+    }
+    #phone2{
+        margin-top:90px;
+        position:absolute;
+        left:150px;
+        color:blue;
+    }
+    #subject{
+        margin-top:72px;
+        position:absolute;
+        left:615px;
+        height:30px;
+        width:240px;
+        position: fixed;
+        border:none;
+        border-radius:30px;
+
+        
+    }
+    #subject2{
+        margin-top:52px;
+        position:absolute;
+        left:615px;
+        position: fixed;
+        color:blue;
+    }
+  
+
+    
+   
+    #message{
+        margin-top:110px;
+        position:absolute;
+        left:150px;
+        padding-left:20px;
+        padding-right:20px;
+        height:30px;
+        width:240px;
+        resize: none;
+        width:660px;
+        height:150px;
+        border:none;
+        border-radius:30px;
+    }
+    #message2{
+        margin-top:90px;
+        position:absolute;
+        left:150px;
+        color:blue;
+    }
+    #button{
+        color:black;
+        font-weight:bolder;
+        font-size:20px;
+        background-color:whitesmoke;
+        width:130px;
+        height:40px;
+        position:absolute;
+        bottom:50px;
+        display:flex;
+        justify-content: center;
+        padding-top:6px;
+        left:445px;
+        border-width:1px;
+        cursor:pointer;
+        border-radius:30px;
+    }
+    #button:hover{
+        color:black;
+        background-color:blue;
+        color:whitesmoke;
+        transition:1s;
+        
+    }
+    #contactme{
+        height:500px;
+        width:300px;
+        background-color:none;
+        border-radius:30px;
+       border-top:5px solid blue;
+       border-bottom:5px solid blue;
+
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;;
+         
+        position:absolute;
+
+        z-index:3;
+        right:145px;
+        top:75px;
+        display:flex;
+        
+        
+
+    }
+    #cont{
+        margin-left:40px;
+        font-size:40px;
+        color:whitesmoke;
+        stroke-width:5px;
+        
+        font-family:monospace;
+    }
+    #name3{
+        position:absolute;
+        top:90px;
+        font-size:20px;
+        color:blue;
+        text-align:left;
+        left:10px;
+
+    }
+    #gmai{
+        position:absolute;
+        top:150px;
+        font-size:20px;
+        color:blue;
+        text-align:left;
+        left:10px;
+    }
+    #face{
+        position:absolute;
+        top:220px;
+        font-size:20px;
+        text-align:left;
+        color:blue;
+        left:10px;
+    }
+    #insta{
+        position:absolute;
+        top:280px;
+        font-size:20px;
+        text-align:left;
+        color:blue;
+        left:10px;
+    }
+    #name4{
+        position:absolute;
+        top:110px;
+        font-size:20px;
+        color:whitesmoke;
+        text-align:left;
+        left:10px;
+    }
+    #gmai4{
+        position:absolute;
+        top:170px;
+        font-size:20px;
+        color:whitesmoke;
+        text-align:left;
+        left:10px;    
+    }
+    #face4{
+        position:absolute;
+        top:240px;
+        font-size:20px;
+        text-align:left;
+        color:whitesmoke;
+        left:10px;
+    } 
+    #insta4{
+        position:absolute;
+        top:320px;
+        font-size:20px;
+        text-align:left;
+        color:whitesmoke;
+        left:10px; 
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <span><a href="#"><span id="skill">CONTACT</span></a></span>
+            <div id="main">
+            <a id="home" href="index.html"> HOME</a>
+            <a id="projects" href="portfoliosec.html" target="-main"> SKILLS</a>
+            <a id="aboutme" HREF="projects.html">PROJECTS</a>
+            <a id="contact" href="contact.html">CONTACT</a>
+            </div>
+    
+        </nav>
+    </header>
+        
+       <div id="box1">
+        <span id=me>LETS WORK TOGETHER</span>
+        
+        <form id="form" action="https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="8b4026b8-6ae8-4540-bada-22c546b084c4">
+            <label id="name2" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br><br>
+        
+            
+              <label id="email2" for="email">Email:</label>
+            <input type="email" id="gmail" name="email" placeholder="example@example.com" required>
+            <p id="errormessage2"></p>
+            <br><br> 
+        
+            
+            <label id="phone2" for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Country Code +Your Phone Number" required>
+            <br><br>
+            
+            
+            
+             <label id="subject2" for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your message"  required>
+            <br><br>
+        
+            
+            <label id="message2" for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="How I Can Assist You" rows="20" required></textarea>
+            <br><br>
+             <button id="button" type="submit">Submit</button>
+        </form>
+        </div>
+       <div id="contactme">
+           <span id="cont">Contact Me</span>
+           <br>
+           <p id="name3">Name:</p>
+           <br>
+           <p id="name4">Abdul Muqeet</p>
+           <br>
+           <p id="gmai">Country:</p>
+           
+           <p id="gmai4"> Pakistan</p>
+           <br>
+           <p id="insta">InstaGram:</p>
+           <a id="insta4" href="https://www.instagram.com/abdulmuqeet9549/">
+            abdulmuqeet9549</a>
+           <br>
+           <p id="face">Gmail:</p>
+           <p id="face4">abdulmuqeet1714@gmail.com</p>
+           
+
+       </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

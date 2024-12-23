@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        *{
+            background-color:black;
+            margin-top:0px;
+            margin-left:0px;
+            color:white;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        #logo {
+            display: flex;
+            gap: 15px; /* Space between links */
+            
+        }
+
+        #logo  {
+            color: black; /* Initial color */
+            text-decoration: none; /* Remove underline */
+            transition: color 1.5s ease; /* Smooth transition for color change */
+        }
+
+        #logo :hover {
+            color: rgb(12, 12, 12); /* Color on hover */
+        }
+#logo{
+    font-size:30px;
+    color:rgb(211, 216, 214);
+    position:absolute;
+    top:20px;
+    margin-right:200px;
+    
+}
+#logo:hover{
+    border-radius:10%;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    
+}
+
+#main{
+    position:absolute;
+    right:0px;
+    top:25px;
+    font-size:20px;
+    
+    
+}
+#home{
+    margin-right:50px;
+    transition: color 1.5s ease;
+    color:whitesmoke;
+    text-decoration: none;
+}
+#home:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+
+}
+#projects{
+    margin-right:50px;
+    transition: color 1.5s ease;
+    color:whitesmoke;
+    text-decoration:none;
+    background-color:none;
+}
+#projects:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+}
+#aboutme{
+    margin-right:50px;
+   color:whitesmoke;
+   text-decoration:none;
+    transition: color 1.5s ease-out;
+}
+#aboutme:hover{
+    
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    text-decoration:none;
+}
+        #head{
+            font-size:45px;
+            color:blue;
+            display:flex;
+            justify-content:left;
+            margin-left:10px;
+            margin-top:25px;
+            text-decoration:none;
+        
+            
+        }
+        #head {
+    font-family: monospace; /* Monospace font for typewriter effect */
+    overflow: hidden; /* Ensures text is hidden until revealed */
+    font-size:45px;
+    border-right: 3px solid; /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* End with full width */
+    }
+}
+
+/* Keyframes for blinking cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Cursor is invisible */
+    }
+    50% {
+        border-color: black; /* Cursor is visible */
+    }
+}
+
+
+        
+        /* #box1{
+            height:300px;
+            width:249.5px;
+            background-color:blue;
+            position:absolute;
+            top:190px;
+            z-index:0;
+            
+           background-image:url(BOX\ 1\ PIC\ \(1\).png)
+
+            
+        }
+        #box2{
+            height:300px;
+            width:249.5px;
+            background-color:green;
+            position:absolute;
+            top:190px;
+            margin-left:227px;
+            z-index:1;
+            background-image: url(BOX\ 2\ PIC.png);
+            background-size: cover;
+            
+        }
+        #box3{
+            height:300px;
+            width:249.5px;
+            background-color:purple;
+            position:absolute;
+            top:190px;
+            margin-left:454px;
+            Z-INDEX:2;
+            z-index:0;
+            background-image:url(BOX\ 3\ PIC.png);
+            
+        }
+        #box4{
+            height:300px;
+            width:249.5px;
+            background-color:yellow;
+            position:absolute;
+            top:190px;
+            margin-left:686px;
+            z-index:0;
+
+        }
+        #box5{
+            height:300px;
+            width:249.5px;
+            background-color:red;
+            position:absolute;
+            top:190px;
+            margin-left:913px;
+            z-index:0;
+        }
+        #box6{
+            height:300px;
+            width:230px;
+            background-color:blue;
+            animation-duration:2s;
+            position:absolute;
+            top:190px;
+            margin-left:1130px;
+            z-index:0;
+
+        }
+        #box1:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            left:0px;
+            z-index:3;
+            background-clip: border-box  padding-box  content-box  text;
+            
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+        }
+        #box2:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            z-index:3;
+            margin-left:223px;
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+        }
+        #box6:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            z-index:1;
+            margin-left:1100px;
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+        }
+        #box4:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            z-index:3;
+            
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+             }
+             
+    
+    #box5:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            z-index:3;
+            
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+             }
+             
+    #box3:hover{
+            height:350px;
+            width:19%;
+            position:absolute;
+            top:170px;
+            z-index:3;
+            
+            transition-duration: 1s;
+            border: 2px solid whitesmoke;
+            border-radius:10%;
+    }
+    #rec{
+        width:100 vw;
+        height:300px;
+        display:flex;
+        justify-content: space-between;
+    } */
+    #contact{
+    margin-right:100px;
+    color:whitesmoke;
+    text-decoration:none;
+    transition: color 1.5s ease;
+}
+#contact:hover{
+    border-radius:10%;
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black
+} 
+.slider{
+    overflow: hidden; /* Allows the slider effect without scrolling */
+    position: relative; /* Ensure proper positioning of child elements */
+    height: auto;
+    
+    margin:auto;
+    position:relative;
+    width:90%;
+    display:grid;
+    place-items:center;
+    transition: transform 4s;
+}
+.slide-track{
+    display:flex;
+    box-shadow: 0px 0px 0px 10px white;
+    opacity:1.5;
+    width:calc(250*18);
+    animation: scroll 40s linear infinite;
+    transition: transform 1s;
+}
+@keyframes scroll {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(calc(-250px * 9));
+}
+}
+.slide{
+    margin-top:0px;
+    height:550px;
+    width:270px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+    perspective:100px;
+    
+}
+#img{
+    width:90%;
+    transition:transform 1s;
+}
+.slider::before,
+.slider::after {
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+Orgba(255,255,255,0) 100%);
+content: '';
+height: 100%;
+position: absolute;
+width: 15%;
+z-index: 2;
+}
+.slider::before {
+Left: 0;
+top: 0;
+}
+.slider::after {
+right: 0;
+top: 0;
+transform:rotateZ(180deg);
+}
+#img:hover{
+    transform:rotateZ(20px);
+    width:120%;
+    
+}
+#shadow{
+    height:270px;
+    width:70px;
+    background-color:whitesmoke;
+    box-shadow: 20px 0px 50px 10px white;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <span><a id="head" href="#">FEATURED WORKS</a></spna>
+            <div id="main">
+            <a id="home" href="index.html"> Home</a>
+            <a id="projects" href="portfoliosec.html" target="-main"> SKILLS</a>
+            <a id="aboutme" href="projects.html">PROJECTS</a>
+            <a id="contact" href="contact.html">CONTACT</a>
+        </div>
+    
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slide-track">
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+           <!-- same 9 slides doubled -->
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+           <div class="slide">
+            <img id="img" src="BOX 1 PIC (1).png">
+           </div>
+
+
+
+        </div>
+    </div>
+   <div id=shadow></div>
+    
+    <!-- <div id="rec">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+        <div id="box6">box6</div>
+    </div> -->
+    
+  
+
+
+</body>
+<script src="script.js"></script>
+</html>
